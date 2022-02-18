@@ -34,7 +34,7 @@ jobs:
           path: ./fateps-site/dist
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -53,4 +53,4 @@ jobs:
           app-name: 'fateps'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AF33617B2DFB40D9B02990F97BA9A791 }}
-          package: .
+          package: ./fateps-site
