@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Fate RSPS - Account Settings</title>
+
+    <app-head></app-head>
+</head>
+
+<body>
+    <app-navigation></app-navigation>
+
+  <main>
+    <div class="container">
+      <section>
+          <div class="section-title">
+              <img src="assets/images/universal/section-icons/profile-icon.png" lazy>
+              <h3>Profile</h3>
+              <p class="profile-creation">Account Created: 04/01/2022 - 15:34 PM</p>
+          </div>
+          <div class="content-box">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+              <div class="col">
+                <ul class="profile-details">
+                  <li><p>Username:</p> <span>Calum</span></li>
+                  <li><p>Email:</p> <span>Calum@gfxdistrict.com</span></li>
+                </ul>
+              </div>
+              <div class="col">
+                <div class="content-box--inner">
+                  <div class="content-box--inner-title space-between">
+                    <h3>Total Votes</h3> 
+                    <p>All Time</p>
+                  </div>
+                  <h2 class="profile-stat">123 Votes</h2>
+                </div>
+              </div>
+              <div class="col">
+                <div class="content-box--inner">
+                  <div class="content-box--inner-title space-between">
+                    <h3>Donations Total</h3> 
+                    <p>USD</p>
+                  </div>
+                  <h2 class="profile-stat">$100.00</h2>
+                </div>
+              </div>
+              <div class="col">
+                <div class="content-box--inner">
+                  <div class="content-box--inner-title">
+                    <h3>Available Credits</h3> 
+                  </div>
+                  <h2 class="profile-stat">534 Credits</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="row gy-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="section-title">
+                <img src="assets/images/universal/section-icons/auth-icon.png" lazy>
+                <h3>Two Factor Authentication</h3>
+            </div>
+            <div class="content-box">
+              <form>
+                <p class="text-white text-center">Scan the QR code below with an authentication app, such as Google Authenticator on your phone.</p>
+                <div class="content-box--inner mb-4">
+                  <img src="assets/images/universal/qr-code.png" class="qr-code" lazy>
+                </div>
+                <div class="mb-3">
+                  <label for="profileAuthenticatorCode" class="form-label">Type the code created on the app</label>
+                  <input type="text" class="form-control" id="profileAuthenticatorCode" placeholder="Enter code on the authenticator app">
+                </div>
+                <button type="submit" class="btn full-width">Verify</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-8">
+            <div class="section-title">
+                <img src="assets/images/universal/section-icons/settings-icon.png" lazy>
+                <h3>Account Settings</h3>
+            </div>
+            <div class="content-box">
+              <div class="row gy-3 row-cols-1 row-cols-lg-2">
+                <div class="col">
+                  <div class="content-box--inner outline-box">
+                    <div class="content-box--inner-title">
+                      <h3>Change Email Address</h3> 
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                          <label for="currentPassword" class="form-label">Current Password</label>
+                          <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="profileNewEmail" class="form-label">New Email Address</label>
+                          <input type="email" class="form-control" id="profileNewEmail" placeholder="Enter new email address" required>
+                        </div>
+
+                        <button type="submit" class="btn">Update Email</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="content-box--inner outline-box">
+                    <div class="content-box--inner-title">
+                      <h3>Change Password</h3> 
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                          <label for="currentPassword" class="form-label">Current Password</label>
+                          <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="profileNewPassword" class="form-label">New Password</label>
+                          <input type="password" class="form-control" id="profileNewPassword" placeholder="Enter new password" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="profileRepeatNewPassword" class="form-label">Confirm New Password</label>
+                          <input type="password" class="form-control" id="profileRepeatNewPassword" placeholder="Re-enter new password" required>
+                        </div>
+
+                        <button type="submit" class="btn">Change Password</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <app-footer></app-footer>
+  <app-scripts></app-scripts>
+</body>
+</html>
